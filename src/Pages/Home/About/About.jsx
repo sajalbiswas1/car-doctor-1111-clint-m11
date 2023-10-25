@@ -13,7 +13,7 @@ const About = () => {
                     <h3 className='text-xl font-bold text-[#FF3811]'>About Us</h3>
                     <h1 className="font-bold text-5xl">We are qualified & of experience in this field</h1>
                     <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. </p>
-                    <p>the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                    <p>the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. </p>
                     <button className="btn btn-error">Get More Info</button>
                 </div>
             </div>
