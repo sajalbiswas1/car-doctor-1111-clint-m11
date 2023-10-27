@@ -1,7 +1,8 @@
 import { BsArrowRight } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const ServicesCard = ({ service }) => {
-    const { img, title, price } = service;
+    const { _id, img, title, price } = service;
 
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
@@ -12,7 +13,9 @@ const ServicesCard = ({ service }) => {
                 <h2 className="card-title text-2xl font-bold">{title}</h2>
                 <div className='flex justify-between items-center'>
                     <p className='text-xl font-semibold text-[#FF3811]'>Price: {price}</p>
+                    <Link to={`/book/${_id}`}>
                     <BsArrowRight className='text-[#FF3811]'></BsArrowRight>
+                    </Link>
                 </div>
             </div>
             
