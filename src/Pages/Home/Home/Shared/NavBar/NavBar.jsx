@@ -18,7 +18,10 @@ const NavBar = () => {
     const nabMenu = <>
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/about'}>About</Link></li>
-        { user? <li onClick={handleSignOut}><Link>SignOut</Link></li>
+        { user? <>
+            <li><Link to={'/bookings'}>My Bookings</Link></li>
+            <li onClick={handleSignOut}><Link>SignOut</Link></li>
+        </>
        : <li><Link to={'/login'}>Login</Link></li>
         }
     </>
